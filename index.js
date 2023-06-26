@@ -38,19 +38,19 @@ function diff()
     let exact_year = parseInt(year) + parseInt(year_1);
     let exact_month = parseInt(months) + parseInt(months_1);
     let exact_days = parseInt(days) + parseInt(days_1);
-    alert("started")
+   
     if (exact_days > 31 )
     {
-        alert("if started")
+  
         exact_month = exact_month + 1;
         exact_days = exact_days - 31 ;
         if(exact_month > 12)
         {
-        alert("next if started")
+        
             exact_year = exact_year + 1 ;
             exact_month = exact_month - 12 ;
         }
-        alert("updating para")
+     
         document.querySelector("#show-diff").innerHTML = ("candidate has experience of " + exact_year + " years " + exact_month + " months " + exact_days + " days ");
     }
     else
